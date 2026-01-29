@@ -1,0 +1,18 @@
+[debug] [2026-01-29T06:51:45.387Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T06:51:45.388Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T06:51:45.714Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T06:51:45.714Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T06:51:45.715Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T06:51:45.715Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T07:03:45.508Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T07:03:45.510Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T07:03:45.668Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T07:03:45.668Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T07:03:45.669Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T07:03:45.669Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T07:11:30.935Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T07:11:30.937Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T07:11:31.087Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T07:11:31.087Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
+[debug] [2026-01-29T07:11:31.087Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-29T07:11:31.088Z] > authorizing via signed-in user (Kevin.rousseau@protonmail.com)
