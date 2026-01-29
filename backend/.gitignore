@@ -46,6 +46,10 @@ lerna-debug.log*
 .temp
 .tmp
 
+# Local SQLite database
+/data/*
+!/data/.gitkeep
+
 # Runtime data
 pids
 *.pid
