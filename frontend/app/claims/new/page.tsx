@@ -39,6 +39,7 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { toast } from "@/components/ui/sonner";
+import { AttachmentThumbnailCanvas } from "@/components/attachment-thumbnail-canvas";
 
 const formSchema = z.object({
   policyNumber: z.string().min(2, "Policy number is required."),
@@ -291,15 +292,13 @@ export default function NewClaimPage() {
                 </FormDescription>
                 <div className="space-y-3">
                   {fields.map((field, index) => (
-                    <div
+                    <FormField
                       key={field.id}
-                      className="flex flex-col gap-2 sm:flex-row sm:items-center"
-                    >
-                      <FormField
-                        control={form.control}
-                        name={`attachments.${index}`}
-                        render={({ field: attachmentField }) => (
-                          <FormItem className="w-full">
+                      control={form.control}
+                      name={`attachments.${index}`}
+                      render={({ field: attachmentField }) => (
+                        <FormItem className="w-full">
+                          <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:gap-3">
                             <FormControl>
                               <Input
                                 placeholder="https://example.com/attachment"
@@ -310,22 +309,27 @@ export default function NewClaimPage() {
                                 {...attachmentField}
                               />
                             </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <Button
-                        type="button"
-                        variant="ghost"
-                        size="icon"
-                        onClick={() => remove(index)}
-                        className="self-start sm:self-center"
-                        aria-label="Remove attachment"
-                        disabled={fields.length === 1}
-                      >
-                        <X className="h-4 w-4" aria-hidden="true" />
-                      </Button>
-                    </div>
+                            <div className="flex items-start gap-2 sm:flex-col sm:items-end">
+                              <AttachmentThumbnailCanvas
+                                url={attachmentField.value ?? ""}
+                                className="shrink-0"
+                              />
+                              <Button
+                                type="button"
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => remove(index)}
+                                aria-label="Remove attachment"
+                                disabled={fields.length === 1}
+                              >
+                                <X className="h-4 w-4" aria-hidden="true" />
+                              </Button>
+                            </div>
+                          </div>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
                   ))}
                 </div>
                 <Button

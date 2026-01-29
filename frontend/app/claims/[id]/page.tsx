@@ -32,6 +32,7 @@ import {
 } from "@/components/ui/accordion";
 import { Skeleton } from "@/components/ui/skeleton";
 import { toast } from "@/components/ui/sonner";
+import { AttachmentThumbnailCanvas } from "@/components/attachment-thumbnail-canvas";
 
 const statusLabels: Record<ClaimStatus, string> = {
   NEW: "New",
@@ -335,22 +336,33 @@ export default function ClaimDetailPage() {
               <CardDescription>Evidence, receipts, and estimates.</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="space-y-3">
+              <div className="grid gap-3 sm:grid-cols-2">
                 {claim.attachments.map((attachment) => (
-                <Button
-                  asChild
-                  key={attachment}
-                  variant="outline"
-                  className="w-full justify-between"
-                >
-                  <a href={attachment} target="_blank" rel="noreferrer noopener">
-                      <span className="min-w-0 flex-1 truncate text-left">
+                  <Button
+                    asChild
+                    key={attachment}
+                    variant="outline"
+                    className="h-auto w-full justify-start p-3"
+                  >
+                    <a
+                      href={attachment}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="flex w-full items-center gap-3"
+                    >
+                      <AttachmentThumbnailCanvas
+                        url={attachment}
+                        width={112}
+                        height={76}
+                        className="shrink-0"
+                      />
+                      <span className="min-w-0 flex-1 truncate text-left text-sm">
                         {attachment}
                       </span>
-                      <FileText className="h-4 w-4" aria-hidden="true" />
-                  </a>
-                </Button>
-          ))}
+                      <FileText className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                    </a>
+                  </Button>
+                ))}
               </div>
             </CardContent>
           </Card>
