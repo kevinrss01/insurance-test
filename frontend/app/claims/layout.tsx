@@ -48,6 +48,9 @@ export default function ClaimsLayout({
               <Button asChild variant="ghost" size="sm">
                 <Link href="/claims">Claims</Link>
               </Button>
+              <Button asChild variant="ghost" size="sm">
+                <Link href="/claims/triage">Triage</Link>
+              </Button>
               <Button asChild size="sm" className="shadow-soft">
                 <Link href="/claims/new">
                   <Sparkles className="h-4 w-4" aria-hidden="true" />

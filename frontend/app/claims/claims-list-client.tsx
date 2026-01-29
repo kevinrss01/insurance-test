@@ -129,6 +129,12 @@ export default function ClaimsListClient() {
               </Link>
             </Button>
             <Button asChild variant="outline">
+              <Link href="/claims/triage">
+                <Filter className="h-4 w-4" aria-hidden="true" />
+                Employee triage
+              </Link>
+            </Button>
+            <Button asChild variant="outline">
               <Link href="/claims/new">Quick Intake Guide</Link>
             </Button>
           </div>
