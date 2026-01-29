@@ -6,16 +6,17 @@ Quick Start (Local Dev)
 Prereqs:
 - Node.js 20+
 - pnpm
+- Docker + Docker Compose
 
-Backend (NestJS + SQLite)
+Backend (Docker Required)
 -------------------------
+The backend must be run via Docker in this project.
+
 ```bash
-cd backend
-pnpm install
-cp .env.example .env
+# from repo root
+cp backend/.env.example backend/.env
 # Set AI_GATEWAY_API_KEY in backend/.env
-pnpm db:setup
-pnpm start:dev
+docker compose up -d --build backend
 ```
 Backend runs on http://localhost:4000
 
